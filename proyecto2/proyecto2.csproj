@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B97C83C8-9EB3-495B-B8A7-1B5C43DD4096}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>proyecto2</RootNamespace>
+    <AssemblyName>proyecto2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acercade.Designer.cs">
+      <DependentUpon>acercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="actualizar_muebles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="actualizar_muebles.Designer.cs">
+      <DependentUpon>actualizar_muebles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="actualizar_diezmo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="actualizar_diezmo.Designer.cs">
+      <DependentUpon>actualizar_diezmo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="actualizar_miembros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="actualizar_miembros.Designer.cs">
+      <DependentUpon>actualizar_miembros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="actualizar_ofrenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="actualizar_ofrenda.Designer.cs">
+      <DependentUpon>actualizar_ofrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conection.Designer.cs">
+      <DependentUpon>conection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crud.cs" />
+    <Compile Include="diezmo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diezmo.Designer.cs">
+      <DependentUpon>diezmo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="miembros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miembros.Designer.cs">
+      <DependentUpon>miembros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muebles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muebles.Designer.cs">
+      <DependentUpon>muebles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ofrenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ofrenda.Designer.cs">
+      <DependentUpon>ofrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro.Designer.cs">
+      <DependentUpon>registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="acercade.resx">
+      <DependentUpon>acercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="actualizar_diezmo.resx">
+      <DependentUpon>actualizar_diezmo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="actualizar_miembros.resx">
+      <DependentUpon>actualizar_miembros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="actualizar_muebles.resx">
+      <DependentUpon>actualizar_muebles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="actualizar_ofrenda.resx">
+      <DependentUpon>actualizar_ofrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conection.resx">
+      <DependentUpon>conection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diezmo.resx">
+      <DependentUpon>diezmo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miembros.resx">
+      <DependentUpon>miembros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muebles.resx">
+      <DependentUpon>muebles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ofrenda.resx">
+      <DependentUpon>ofrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="registro.resx">
+      <DependentUpon>registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
